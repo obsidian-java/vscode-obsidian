@@ -33,17 +33,10 @@ lazy val root = project.in(file("."))
     Compile / fullOptJS / artifactPath := baseDirectory.value / "out" / "extension.js",
     install := installDependenciesTask.dependsOn(Compile / fastOptJS).value,
     libraryDependencies ++= Seq(
-      "com.lihaoyi" %%% "utest" % "0.8.2" % "test",
-      "org.scala-lang.modules" %%% "scala-parser-combinators" % "2.3.0",
-      "org.scalactic" %%% "scalactic" % "3.2.9",
-      "org.scalatest" %%% "scalatest" % "3.2.9" % "test",
-      "org.scala-lang" %%% "toolkit" % "0.1.7",
-      "org.typelevel" %%% "cats-core" % "2.10.0",
       "obsidian.lang.java" %%% "scalangj" % "0.1.8",
       "obsidian.lang.java" %%% "obsidian" % "0.0.2",
     ),
     Compile / npmDependencies ++= Seq("@types/vscode" -> "1.92.0"),
-    testFrameworks += new TestFramework("utest.runner.Framework"),
     scalaJSUseMainModuleInitializer := false,
   )
   .enablePlugins(

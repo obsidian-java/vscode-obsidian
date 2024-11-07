@@ -1,12 +1,12 @@
-# Visual Studio Code Plug-In
-This plug-in transforms highlighted Java code into the obfuscated form as shown in the GIF below.
+# VSCode-Obsidian
+**VSCode-Obsidian** is a plugin for Visual Studio Code that allows you to obfuscate Java code using the [Obsidian](https://github.com/obsidian-java/obsidian) library as shown in the GIF below.
 
 ![Demonstration of the plug-in](obsidian_demo.gif)
 
 ## Installation
 First, clone this repository using your terminal with the following command:
 ```
-git clone https://github.com/obsidian-java/obsidian.git
+git clone https://github.com/obsidian-java/vscode-obsidian.git
 ```
 
 Next, ensure you have the following:
